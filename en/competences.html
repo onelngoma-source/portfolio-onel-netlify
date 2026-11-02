@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skills · Onel Ngoma</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Onel Ngoma, junior Data Analyst in Libreville: Big Data, Machine Learning and decision-support applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap"><a class="logo" href="index.html">Onel<span>Ngoma</span></a><div class="head-r"><a class="lang-switch" href="../competences.html" hreflang="fr" aria-label="Lire en français"><span>FR</span></a><button type="button" class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="omenu"><span></span><span></span><span></span></button></div></div></header><nav class="overlay-menu" id="omenu" aria-label="Main navigation"><span class="om-sub">MENU</span><a href="index.html">Home</a><a href="competences.html" aria-current="page">Skills</a><a href="parcours.html">Background</a><a href="projets.html">Projects</a><a href="contact.html">Contact</a></nav>
+<main data-lang="en">
+<style>
+.sk-hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.sphere-box{position:relative;aspect-ratio:1;max-width:560px;width:100%;justify-self:center;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(31,79,209,.07),transparent 65%)}
+.sphere-box::before{content:"";position:absolute;inset:6%;border-radius:50%;border:1.5px dashed rgba(19,53,122,.18)}
+#sphere{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y}
+#sphere:active{cursor:grabbing}
+.sphere-hint{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);font-family:var(--f-mono);font-size:12px;color:var(--muted);background:var(--paper);padding:5px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.sk-intro{min-width:0}
+.sk-intro .lead{margin-top:18px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.legend span{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy)}
+.legend i{width:12px;height:12px;border-radius:4px}
+.cats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:80px}
+.cat .top{display:flex;align-items:center;gap:14px}
+.cat .ic{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--blue-soft);color:var(--blue);flex:none}
+.cat.g .ic{background:var(--gold-soft);color:var(--gold-ink)}
+.cat h2{font-size:24px}
+.cat .sub{font-size:14px;color:var(--muted)}
+.cat ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.cat li{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:12px 14px;border-radius:12px;background:var(--mist)}
+.cat li b{font-weight:700;color:var(--navy)}
+.cat li span{font-size:14px;color:var(--muted);text-align:right}
+.methods{margin-top:18px}
+.methods h2{font-size:24px}
+.methods .chips{margin-top:18px}
+.methods .chips span{font-size:13.5px;padding:8px 13px;background:var(--mist);border-color:transparent;color:var(--navy)}
+.langs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.lang{padding:22px;border-radius:20px;background:var(--navy);color:#C7D4F0}
+.lang b{display:block;font-family:var(--f-display);font-size:22px;color:#fff}
+.lang:nth-child(2){background:var(--paper);color:var(--muted);border:1px solid var(--line)}.lang:nth-child(2) b{color:var(--navy)}
+.lang:nth-child(3){background:var(--gold-soft);color:var(--gold-ink);border:1px solid #F0DEA8}.lang:nth-child(3) b{color:var(--navy)}
+@media (max-width:900px){.sk-hero,.cats{grid-template-columns:1fr}.langs{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <header class="page-head">
+    <span class="kicker">Skills</span>
+    <h1 class="kinetic">My <span class="ink">toolbox.</span></h1>
+    <p>The languages, tools and methods I use, from the first CSV file to the live application.</p>
+  </header>
+
+  <div class="sk-hero">
+    <div class="sphere-box rv">
+      <canvas id="sphere" role="img" aria-label="Technology sphere: Python, pandas, SQL, Apache NiFi, PostgreSQL, MySQL, Redis, scikit-learn, XGBoost, TensorFlow, SHAP, Flask, React, Node.js, Docker, Git, Chart.js, Linux and more"></canvas>
+      <span class="sphere-hint">Drag to spin the sphere</span>
+    </div>
+    <div class="sk-intro rv">
+      <h2 class="h2">Many tools, one common thread: data.</h2>
+      <p class="lead">Each technology has its place in the chain: collect, transform, store, model, report. I pick the simplest tool that does the job, and I can explain why.</p>
+      <div class="legend"><span><i style="background:#1F4FD1"></i>Data</span><span><i style="background:#D4A73A"></i>Machine Learning</span><span><i style="background:#0A2350"></i>Development</span></div>
+    </div>
+  </div>
+
+  <div class="cats">
+    <article class="spot cat rv"><span class="corners"></span>
+      <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><div><h2>Data &amp; Big Data</h2><span class="sub">Collect, transform, store</span></div></div>
+      <ul><li><b>Python · pandas</b><span>preparation, cleaning</span></li><li><b>SQL</b><span>queries, modelling</span></li><li><b>Apache NiFi</b><span>ETL pipelines</span></li><li><b>PostgreSQL · MySQL</b><span>relational databases</span></li><li><b>Redis</b><span>key-value NoSQL</span></li></ul>
+    </article>
+    <article class="spot cat g rv"><span class="corners"></span>
+      <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><path d="M7 6l3 5M7 18l3-5M14 12h3"/></svg></span><div><h2>Machine Learning</h2><span class="sub">Model, evaluate, explain</span></div></div>
+      <ul><li><b>scikit-learn</b><span>regression, Random Forest</span></li><li><b>XGBoost</b><span>gradient boosting</span></li><li><b>Kernel methods</b><span>Nadaraya-Watson</span></li><li><b>SHAP</b><span>score explanation</span></li><li><b>TensorFlow · Keras</b><span>neural networks</span></li></ul>
+    </article>
+    <article class="spot cat rv"><span class="corners"></span>
+      <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></span><div><h2>Business intelligence</h2><span class="sub">Report to decide</span></div></div>
+      <ul><li><b>Star schema</b><span>data warehouses</span></li><li><b>KPI</b><span>indicator design</span></li><li><b>Dashboards</b><span>tracking and filters</span></li><li><b>Chart.js</b><span>web visualisation</span></li></ul>
+    </article>
+    <article class="spot cat g rv"><span class="corners"></span>
+      <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><div><h2>Dev &amp; DevOps</h2><span class="sub">Ship and deploy</span></div></div>
+      <ul><li><b>Flask</b><span>APIs and scoring apps</span></li><li><b>React · Node.js</b><span>web interfaces</span></li><li><b>Git · GitHub Actions</b><span>versioning, CI/CD</span></li><li><b>Docker · Linux</b><span>environments</span></li></ul>
+    </article>
+  </div>
+
+  <article class="spot methods rv"><span class="corners"></span>
+    <h2>Methods I apply</h2>
+    <div class="chips"><span>Stratified train / test split</span><span>SMOTE rebalancing</span><span>Cross-validation</span><span>Bootstrap (1,000 resamples)</span><span>AUC, F1, recall</span><span>Conceptual / logical data models</span><span>UML</span><span>Star schema</span></div>
+  </article>
+
+  <div class="langs">
+    <div class="lang rv"><b>French</b>Native language</div>
+    <div class="lang rv"><b>English</b>Technical level</div>
+    <div class="lang rv"><b>Turkish</b>Intermediate · one year in Turkey</div>
+  </div>
+
+  <a class="next-page rv" href="parcours.html"><div><small>NEXT PAGE</small><strong>My background</strong></div><span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+
+</main>
+<footer class="foot"><div class="wrap"><span>© 2026 Onel Ngoma · Libreville, Gabon</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="competences.html">Skills</a><a href="parcours.html">Background</a><a href="projets.html">Projects</a><a href="contact.html">Contact</a><a href="https://github.com/onelngoma-source" target="_blank" rel="noopener">GitHub ↗</a></nav></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../assets/main.js"></script>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var C = {d:'#1F4FD1', m:'#D4A73A', v:'#0A2350'};
+  var tags = [['Python','d'],['pandas','d'],['SQL','d'],['Apache NiFi','d'],['PostgreSQL','d'],['MySQL','d'],['Redis','d'],['ETL','d'],['NumPy','d'],
+              ['scikit-learn','m'],['XGBoost','m'],['SHAP','m'],['TensorFlow','m'],['Keras','m'],['Random Forest','m'],['SMOTE','m'],['Kernel','m'],
+              ['Flask','v'],['React','v'],['Node.js','v'],['Docker','v'],['Git','v'],['Chart.js','v'],['Linux','v'],['PHP','v'],['CI/CD','v']];
+  var cv = document.getElementById('sphere'), ctx = cv.getContext('2d'), pts = [], R = 0, W = 0;
+  var n = tags.length;
+  for (var i = 0; i < n; i++){
+    var phi = Math.acos(-1 + (2*i + 1)/n), th = Math.sqrt(n*Math.PI)*phi;
+    pts.push({x:Math.cos(th)*Math.sin(phi), y:Math.sin(th)*Math.sin(phi), z:Math.cos(phi), t:tags[i][0], c:C[tags[i][1]]});
+  }
+  function size(){ var r = cv.getBoundingClientRect(), d = Math.min(devicePixelRatio||1, 2); W = r.width; cv.width = W*d; cv.height = W*d; ctx.setTransform(d,0,0,d,0,0); R = W*0.36; }
+  var ax = 0.003, ay = 0.0045, drag = null;
+  function rot(p, a, b){
+    var y = p.y*Math.cos(a) - p.z*Math.sin(a), z = p.y*Math.sin(a) + p.z*Math.cos(a); p.y = y; p.z = z;
+    var x = p.x*Math.cos(b) + p.z*Math.sin(b); z = -p.x*Math.sin(b) + p.z*Math.cos(b); p.x = x; p.z = z;
+  }
+  function rr(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+  function draw(){
+    ctx.clearRect(0,0,W,W);
+    pts.forEach(function(p){ rot(p, ax, ay); });
+    var sorted = pts.slice().sort(function(a,b){ return a.z - b.z; });
+    sorted.forEach(function(p){
+      var s = (p.z + 2)/3, x = W/2 + p.x*R, y = W/2 + p.y*R, fs = Math.max(11, W*0.03)*(.65 + s*.55);
+      ctx.globalAlpha = .25 + s*.75;
+      ctx.font = '700 ' + fs + 'px Manrope, system-ui, sans-serif';
+      var tw = ctx.measureText(p.t).width, ph = fs*1.9, pw = tw + fs*1.4;
+      rr(x - pw/2, y - ph/2, pw, ph, ph/2);
+      ctx.fillStyle = p.c === '#D4A73A' ? '#FBF2DA' : (p.c === '#0A2350' ? '#0A2350' : '#E9EFFC'); ctx.fill();
+      ctx.lineWidth = 1; ctx.strokeStyle = p.c; ctx.globalAlpha *= .9; ctx.stroke();
+      ctx.fillStyle = p.c === '#D4A73A' ? '#7A580A' : (p.c === '#0A2350' ? '#FFFFFF' : '#1F4FD1');
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(p.t, x, y + 1);
+    });
+    ctx.globalAlpha = 1;
+    if (!drag){ ax += (0.003 - ax)*.02; ay += (0.0045 - ay)*.02; }
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  cv.addEventListener('pointerdown', function(e){ drag = {x:e.clientX, y:e.clientY}; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove', function(e){ if (!drag) return; ay = (e.clientX - drag.x)*0.0016; ax = -(e.clientY - drag.y)*0.0016; drag = {x:e.clientX, y:e.clientY}; if (reduce) draw(); });
+  cv.addEventListener('pointerup', function(){ drag = null; });
+  size(); draw();
+  addEventListener('resize', function(){ size(); if (reduce) draw(); });
+  if (document.fonts) document.fonts.ready.then(function(){ if (reduce) draw(); });
+})();
+</script>
+
+</body>
+</html>

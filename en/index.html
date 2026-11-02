@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Onel Ngoma Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Onel Ngoma, junior Data Analyst in Libreville: Big Data, Machine Learning and decision-support applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap"><a class="logo" href="index.html">Onel<span>Ngoma</span></a><div class="head-r"><a class="lang-switch" href="../index.html" hreflang="fr" aria-label="Lire en français"><span>FR</span></a><button type="button" class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="omenu"><span></span><span></span><span></span></button></div></div></header><nav class="overlay-menu" id="omenu" aria-label="Main navigation"><span class="om-sub">MENU</span><a href="index.html" aria-current="page">Home</a><a href="competences.html">Skills</a><a href="parcours.html">Background</a><a href="projets.html">Projects</a><a href="contact.html">Contact</a></nav>
+<main data-lang="en">
+<style>
+.hero{padding-block:40px 30px}
+.hero-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:56px;align-items:center}
+.hero-txt{min-width:0}
+.hello{font-family:var(--f-mono);font-size:15px;color:var(--blue);margin-top:26px}
+.hero h1{font-size:clamp(48px,7.4vw,104px);line-height:.95;font-weight:800;letter-spacing:-.05em;margin-top:8px}
+.hero h1 .ink{background:linear-gradient(100deg,var(--navy) 20%,var(--blue) 60%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.typed{margin-top:22px;font-family:var(--f-display);font-size:clamp(20px,2.3vw,28px);font-weight:600;color:var(--navy);min-height:1.4em}
+.typed .w{color:var(--blue);border-right:3px solid var(--gold);padding-right:4px;animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{border-color:transparent}}
+.hero .lead{margin-top:18px}
+.hero .row{margin-top:32px}
+.mini{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.mini a,.mini button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font:600 14px var(--f-body);color:var(--navy);text-decoration:none;cursor:pointer}
+.mini a:hover,.mini button:hover{border-color:var(--gold);background:var(--gold-soft)}
+.mini svg{width:17px;height:17px}
+
+.ide-wrap{position:relative;min-width:0;padding:30px 10px}
+.ide{position:relative;border-radius:20px;background:var(--navy);box-shadow:0 50px 90px -40px rgba(10,35,80,.75);overflow:hidden}
+.ide-top{display:flex;align-items:center;gap:7px;padding:13px 16px;background:#0D2A60;border-bottom:1px solid rgba(255,255,255,.08)}
+.ide-top i{width:11px;height:11px;border-radius:50%;background:#F26B6B}.ide-top i:nth-child(2){background:#F5C04A}.ide-top i:nth-child(3){background:#3CC17A}
+.ide-top .file{margin-left:12px;font-family:var(--f-mono);font-size:12.5px;color:#C7D4F0;padding:5px 12px;border-radius:8px;background:rgba(255,255,255,.07)}
+.ide-top .run{margin-left:auto;font-family:var(--f-mono);font-size:11.5px;color:#7FE0A8;display:flex;align-items:center;gap:6px}
+.ide-top .run::before{content:"";width:7px;height:7px;border-radius:50%;background:#3CC17A;animation:ping 1.8s infinite}
+pre.code{margin:0;padding:22px 22px 26px 0;font-family:var(--f-mono);font-size:14.5px;line-height:1.75;color:#E6ECF8;overflow-x:auto;counter-reset:ln}
+pre.code .l{display:block;padding-left:56px;position:relative;white-space:pre}
+pre.code .l::before{counter-increment:ln;content:counter(ln);position:absolute;left:0;width:38px;text-align:right;color:#5470A8}
+.k{color:#F2D27A}.s{color:#9FE3B8}.n{color:#8FB4FF}.c{color:#7F93BD;font-style:italic}.f{color:#FFFFFF;font-weight:700}.p{color:#C7D4F0}
+.ide .out{padding:14px 22px;border-top:1px solid rgba(255,255,255,.08);font-family:var(--f-mono);font-size:13px;color:#9FB2DA;background:#0B2557}
+.ide .out b{color:var(--gold-2);font-weight:500}
+.float{position:absolute;z-index:3;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(255,255,255,.92);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.float .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--gold-soft);color:var(--gold-ink)}
+.float strong{display:block;font-family:var(--f-display);font-size:19px;color:var(--navy);line-height:1.15}
+.float span{font-size:13px;color:var(--muted)}
+.f1{top:-4px;right:-6px}.f2{bottom:-10px;left:-14px}
+.f1,.f2{animation:bob 6s ease-in-out infinite}.f2{animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;margin-top:110px}
+.photo{position:relative;max-width:440px;width:100%;justify-self:center}
+.photo::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:2px solid var(--gold);border-radius:28px}
+.photo .frame{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(10,35,80,.6);transform-style:preserve-3d;transition:transform .5s var(--ease)}
+.photo img{width:100%;height:auto}
+.photo .badge{position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.92);font-weight:700;font-size:14px;color:var(--navy);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.photo .badge svg{width:18px;height:18px;color:var(--gold-ink)}
+.about-txt{min-width:0}
+.about-txt h2{margin-top:18px}
+.about-txt .lead{margin-top:20px}
+.quote{margin-top:24px;padding:20px 24px;border-left:3px solid var(--gold);background:var(--gold-soft);border-radius:0 16px 16px 0;font-size:16.5px;color:var(--ink)}
+.quote b{display:block;margin-top:8px;font-size:14px;color:var(--gold-ink)}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.nums div{padding:18px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}
+.nums b{display:block;font-family:var(--f-display);font-size:30px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+.nums span{font-size:13.5px;color:var(--muted)}
+
+.what{margin-top:120px}
+.what-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:36px}
+.what .ic{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--blue-soft);color:var(--blue)}
+.what .spot:nth-child(2) .ic{background:var(--gold-soft);color:var(--gold-ink)}
+.what h3{font-size:22px;margin-top:22px}
+.what p{margin-top:10px;color:var(--muted);font-size:15.5px}
+.what .chips{margin-top:20px}
+
+.feat{margin-top:120px;display:grid;grid-template-columns:1fr 1.2fr;border-radius:32px;overflow:hidden;background:var(--paper);box-shadow:var(--shadow)}
+.feat .t{padding:46px;min-width:0}
+.feat .t h2{margin-top:18px;font-size:clamp(28px,3.4vw,42px)}
+.feat .t p{margin-top:16px;color:var(--muted)}
+.feat .t .row{margin-top:28px}
+.feat .v{background:var(--navy);padding:40px 30px;display:flex;align-items:center;min-width:0;perspective:1200px;position:relative;overflow:hidden}
+.feat .v::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:50px solid var(--gold);opacity:.13;right:-150px;bottom:-190px}
+.feat .browser{width:100%}
+.center-head{text-align:center}
+.center-head .lead{margin:16px auto 0}
+
+@media (max-width:980px){
+  .hero-grid,.about,.feat{grid-template-columns:1fr}
+  .about{gap:48px}
+  .what-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  pre.code{font-size:12.5px}
+  pre.code .l{padding-left:40px}
+  pre.code .l::before{width:26px}
+  .nums{grid-template-columns:1fr 1fr 1fr}
+  .nums b{font-size:22px}
+  .feat .t{padding:28px}
+  .f1{display:none}.f2{left:0}
+  .photo{max-width:calc(100% - 24px)}
+  .photo::before{inset:14px -14px -14px 14px}
+}
+</style>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <span class="kicker">Data Analyst · Big Data &amp; AI</span>
+      <p class="hello">&gt; print("Hello, I am")</p>
+      <h1 class="kinetic">Onel <span class="ink">Ngoma</span></h1>
+      <p class="typed" aria-live="polite">I <span class="w" id="typed">turn data into decisions</span></p>
+      <p class="lead">With a professional bachelor's degree in AI and Big Data, I build the whole data chain, from collection to the application teams use every day.</p>
+      <div class="row">
+        <a class="btn btn-navy" href="projets.html">See my projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="parcours.html">My background</a>
+      </div>
+      <div class="mini">
+        <a href="../assets/CV-Onel-Ngoma.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Resume (PDF, French)</a>
+        <a href="https://github.com/onelngoma-source" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+        <button type="button" data-copy="mail-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span id="mail-h">onelngoma@gmail.com</span></button>
+      </div>
+    </div>
+
+    <div class="ide-wrap">
+      <div class="ide" role="img" aria-label="Profile card written in Python: Onel Ngoma, Libreville, stack Python SQL NiFi scikit-learn XGBoost, best AUC 0.934, mission: from data to decisions">
+        <div class="ide-top"><i></i><i></i><i></i><span class="file">profile.py</span><span class="run">running</span></div>
+<pre class="code" id="code" aria-hidden="true"><span class="l"><span class="k">class</span> <span class="f">DataAnalyst</span><span class="p">:</span></span><span class="l">    name <span class="p">=</span> <span class="s">"Onel Ngoma"</span></span><span class="l">    city <span class="p">=</span> <span class="s">"Libreville, Gabon"</span></span><span class="l">    stack <span class="p">= [</span><span class="s">"Python"</span>, <span class="s">"SQL"</span>, <span class="s">"Apache NiFi"</span>,</span><span class="l">             <span class="s">"scikit-learn"</span>, <span class="s">"XGBoost"</span><span class="p">]</span></span><span class="l">    best_auc <span class="p">=</span> <span class="n">0.934</span>  <span class="c"># Random Forest</span></span><span class="l"></span><span class="l">    <span class="k">def</span> <span class="f">mission</span><span class="p">(</span>self<span class="p">):</span></span><span class="l">        <span class="k">return</span> <span class="s">"From data to decisions"</span></span></pre>
+        <div class="out">&gt;&gt;&gt; DataAnalyst().mission()<br><b>'From data to decisions'</b></div>
+      </div>
+      <div class="float f1"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><div><strong>AUC 0.934</strong><span>Random Forest</span></div></div>
+      <div class="float f2"><span class="ic" style="background:var(--blue-soft);color:var(--blue)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><div><strong>4,424</strong><span>student records analysed</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="about">
+    <figure class="photo rv" style="margin:0">
+      <div class="frame" id="tilt"><img src="../img/photo-accueil.webp" alt="Onel Ngoma in a pinstripe suit, black and white on a navy background" width="608" height="1080"></div>
+      <figcaption class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Libreville, Gabon</figcaption>
+    </figure>
+    <div class="about-txt rv">
+      <span class="kicker">About</span>
+      <h2 class="h2">Raw data,<br>a tool people use.</h2>
+      <p class="lead">I like taking messy data and carrying it all the way to a tool someone actually uses. During my business intelligence internship at Techno Mega Partners, then in my final-year project, I worked on every step: modelling, preparation, Machine Learning and deployment.</p>
+      <p class="quote">What drives me: making data useful to decision-makers, with measured and explained results.<b>Onel Ngoma</b></p>
+      <div class="nums">
+        <div><b class="tnum" data-count="0.934" data-dec="3">0.934</b><span>AUC of my best model</span></div>
+        <div><b class="tnum" data-count="88.6" data-dec="1" data-suf="%">88.6%</b><span>correct predictions</span></div>
+        <div><b class="tnum" data-count="3">3</b><span>languages spoken</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap what">
+  <div class="center-head">
+    <span class="kicker">What I do</span>
+    <h2 class="h2" style="margin-top:18px">Three skills, one chain.</h2>
+  </div>
+  <div class="what-grid">
+    <article class="spot rv"><span class="corners"></span><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h6"/><path d="M17 15l3 3-3 3"/></svg></span><h3>Data engineering</h3><p>ETL pipelines that collect, clean and load data into a well-modelled warehouse.</p><div class="chips"><span>Apache NiFi</span><span>SQL</span><span>PostgreSQL</span></div></article>
+    <article class="spot rv"><span class="corners"></span><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><path d="M7 6l3 5M7 18l3-5M14 12h3"/></svg></span><h3>Machine Learning</h3><p>Models compared rigorously, evaluated on unseen data and explained with SHAP.</p><div class="chips"><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span></div></article>
+    <article class="spot rv"><span class="corners"></span><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></span><h3>BI &amp; apps</h3><p>Dashboards and web applications that put results in the hands of teams.</p><div class="chips"><span>Flask</span><span>React</span><span>Chart.js</span></div></article>
+  </div>
+</section>
+
+<section class="wrap">
+  <article class="feat beam rv">
+    <div class="t">
+      <span class="tag gold">★ Featured project</span>
+      <h2>Early Alert: predicting university dropout</h2>
+      <p>A kernel method compared with three Machine Learning algorithms on 4,424 student records, then deployed as a web application for academic advisors.</p>
+      <div class="row">
+        <a class="btn btn-navy" href="etude-de-cas.html">Read the case study</a>
+        <a class="btn btn-line" href="https://alerte-abandon-universitaire.onrender.com" target="_blank" rel="noopener">Try the app ↗</a>
+      </div>
+    </div>
+    <div class="v"><div class="browser"><div class="bar"><i></i><i></i><i></i><span>alerte-abandon-universitaire.onrender.com</span></div><img src="../img/app-tableau-zoom.webp" alt="Dashboard of the Early Alert application" width="1556" height="1000" loading="lazy"></div></div>
+  </article>
+
+  <a class="next-page rv" href="competences.html"><div><small>NEXT PAGE</small><strong>My toolbox</strong></div><span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</section>
+
+</main>
+<footer class="foot"><div class="wrap"><span>© 2026 Onel Ngoma · Libreville, Gabon</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="competences.html">Skills</a><a href="parcours.html">Background</a><a href="projets.html">Projects</a><a href="contact.html">Contact</a><a href="https://github.com/onelngoma-source" target="_blank" rel="noopener">GitHub ↗</a></nav></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../assets/main.js"></script>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Phrases qui s'écrivent */
+  var words = ['turn data into decisions', 'build ETL pipelines', 'train Machine Learning models', 'design dashboards'];
+  var el = document.getElementById('typed'), wi = 0, ci = words[0].length, del = true;
+  function tick(){
+    var w = words[wi];
+    if (del){ ci--; if (ci <= 0){ del = false; wi = (wi + 1) % words.length; } }
+    else { ci++; if (ci >= words[wi].length){ del = true; el.textContent = words[wi]; return setTimeout(tick, 2200); } }
+    el.textContent = words[wi].slice(0, Math.max(ci, 0)) || '​';
+    setTimeout(tick, del ? 28 : 55);
+  }
+  if (!reduce) setTimeout(tick, 2600);
+
+  /* Le code s'écrit ligne par ligne au chargement */
+  if (!reduce && window.gsap){
+    gsap.from('#code .l', {opacity:0, x:-14, duration:.45, stagger:.11, ease:'power2.out', delay:.35});
+    gsap.from('.ide .out', {opacity:0, y:10, duration:.5, delay:1.5});
+    gsap.from('.float', {scale:.7, opacity:0, duration:.8, stagger:.15, delay:1.1, ease:'back.out(1.8)'});
+    gsap.from('.hero h1, .hello, .typed, .hero .lead, .hero .row, .mini', {y:26, duration:.9, stagger:.08, ease:'power3.out'});
+  }
+
+  /* Inclinaison de la photo */
+  var t = document.getElementById('tilt');
+  if (!reduce && matchMedia('(hover:hover)').matches){
+    t.addEventListener('pointermove', function(e){ var r = t.getBoundingClientRect(), x = (e.clientX-r.left)/r.width-.5, y = (e.clientY-r.top)/r.height-.5; t.style.transform = 'perspective(900px) rotateY(' + (x*10) + 'deg) rotateX(' + (-y*10) + 'deg)'; });
+    t.addEventListener('pointerleave', function(){ t.style.transform = ''; });
+  }
+})();
+</script>
+
+</body>
+</html>

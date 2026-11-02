@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alerte précoce · Onel Ngoma</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Onel Ngoma, Data Analyst junior à Libreville : Big Data, Machine Learning et applications d'aide à la décision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap"><a class="logo" href="index.html">Onel<span>Ngoma</span></a><div class="head-r"><a class="lang-switch" href="en/etude-de-cas.html" hreflang="en" aria-label="Read in English"><span>EN</span></a><button type="button" class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="omenu"><span></span><span></span><span></span></button></div></div></header><nav class="overlay-menu" id="omenu" aria-label="Navigation principale"><span class="om-sub">MENU</span><a href="index.html">Accueil</a><a href="competences.html">Compétences</a><a href="parcours.html">Parcours</a><a href="projets.html" aria-current="page">Projets</a><a href="contact.html">Contact</a></nav>
+<main data-lang="fr">
+<style>
+.crumb{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:600;font-size:15px;color:var(--blue);text-decoration:none}
+.crumb:hover{color:var(--navy)}
+.case-head{padding-block:30px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.case-head h1{font-size:clamp(38px,5.6vw,72px);line-height:1;font-weight:800;letter-spacing:-.04em;margin-top:20px}
+.case-head h1 .ink{background:linear-gradient(100deg,var(--navy) 10%,var(--blue) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.case-head .lead{margin-top:18px}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.meta div{padding:18px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}
+.meta div:last-child{background:var(--navy);border-color:var(--navy)}
+.meta dt{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;color:var(--gold-ink)}
+.meta div:last-child dt{color:var(--gold-2)}
+.meta dd{margin:6px 0 0;font-weight:700;color:var(--navy)}
+.meta div:last-child dd{color:#fff}
+.shot{border-radius:24px;max-width:1040px;margin-inline:auto}
+.block{margin-top:90px}
+.block h2{margin-top:16px}
+.steps{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.steps .spot{padding:26px}
+.steps b{font-family:var(--f-display);font-size:38px;font-weight:800;color:var(--blue);line-height:1}
+.steps .spot:last-child{background:var(--navy);border-color:var(--navy)}
+.steps .spot:last-child b{color:var(--gold-2)}.steps .spot:last-child h3{color:#fff}.steps .spot:last-child p{color:#C7D4F0}
+.steps h3{font-size:19px;margin-top:14px}
+.steps p{margin-top:8px;font-size:15px;color:var(--muted)}
+.res{display:grid;grid-template-columns:1.45fr 1fr;gap:18px;margin-top:34px}
+.chart{overflow-x:auto;margin-top:16px}
+.chart svg{width:100%;min-width:500px;height:auto;display:block}
+.tbl{overflow-x:auto;margin-top:16px}
+table{width:100%;min-width:440px;border-collapse:collapse;font-size:15px}
+th{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:#66738F;font-weight:500;text-align:left;padding:10px 12px}
+td{padding:12px;border-top:1px solid var(--line)}
+th:not(:first-child),td:not(:first-child){text-align:right}
+tr.win td{background:var(--gold-soft);font-weight:800;color:var(--navy)}
+.verdict{background:var(--navy);border-color:var(--navy);color:#C7D4F0;display:flex;flex-direction:column;gap:18px}
+.verdict small{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--gold-2)}
+.verdict .big{font-family:var(--f-display);font-size:clamp(64px,8vw,96px);font-weight:800;line-height:.9;letter-spacing:-.05em;background:linear-gradient(180deg,#FFF2C8,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.verdict h3{color:#fff;font-size:24px}
+.tool{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:34px}
+.lv{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.lv span{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:var(--mist);font-weight:700;font-size:14px;color:var(--navy)}
+.lv i{width:10px;height:10px;border-radius:50%}
+.tool .row{margin-top:26px}
+.appnums .k2{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--gold-ink)}
+.appnums .g{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.appnums .g div{padding:18px;border-radius:16px;background:var(--mist)}
+.appnums .g div:nth-child(3){background:var(--navy)}.appnums .g div:nth-child(3) b{color:var(--gold-2)}.appnums .g div:nth-child(3) span{color:#C7D4F0}
+.appnums b{display:block;font-family:var(--f-display);font-size:34px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+.appnums span{font-size:14px;color:var(--muted)}
+.demo{margin-top:30px;max-width:1040px;margin-inline:auto;border-radius:24px;overflow:hidden;background:var(--navy);box-shadow:var(--shadow)}
+.demo video{display:block;width:100%;height:auto;background:var(--navy)}
+.demo .cap{padding:14px 20px;color:#C7D4F0;font-size:14px}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px;align-items:start}
+.shotbtn{all:unset;box-sizing:border-box;cursor:zoom-in;display:block;border-radius:20px;overflow:hidden;background:var(--paper);border:1px solid var(--line);transition:transform .4s var(--ease),box-shadow .4s}
+.shotbtn:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.shotbtn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.shotbtn img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left;display:block;border-bottom:1px solid var(--line);background:var(--mist)}
+.shotbtn span{display:block;padding:14px 18px;font-size:14px;color:var(--muted)}
+.shotbtn b{display:block;font-family:var(--f-display);font-size:18px;color:var(--navy)}
+#lb{border:0;padding:0;max-width:min(96vw,1600px);width:100%;background:transparent}
+#lb::backdrop{background:rgba(10,35,80,.85)}
+#lb img{width:100%;height:auto;border-radius:14px;display:block}
+.lb-close{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:var(--navy);font-size:24px;cursor:pointer}
+@media (max-width:700px){.gal{grid-template-columns:1fr}}
+@media (max-width:980px){.case-head,.res,.tool{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.meta{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <a class="crumb" href="projets.html">← Tous les projets</a>
+  <header class="case-head">
+    <div>
+      <span class="kicker">Étude de cas · projet de fin d'études</span>
+      <h1 class="kinetic">Repérer le décrochage <span class="ink">avant qu'il arrive.</span></h1>
+      <p class="lead">L'abandon en cours de cursus coûte cher aux étudiants comme aux établissements. L'objectif : estimer dès la fin du premier semestre une probabilité d'abandon fiable, puis la mettre entre les mains des conseillers.</p>
+    </div>
+    <dl class="meta">
+      <div><dt>RÔLE</dt><dd>Analyse, modèles, appli</dd></div>
+      <div><dt>DONNÉES</dt><dd>4 424 étudiants · 36 variables</dd></div>
+      <div><dt>CIBLE</dt><dd>Abandon / non-abandon</dd></div>
+      <div><dt>OUTILS</dt><dd>Python · Flask · SHAP</dd></div>
+    </dl>
+  </header>
+
+  <div class="browser shot beam rv"><div class="bar"><i></i><i></i><i></i><span>alerte-abandon-universitaire.onrender.com/tableau</span></div><img src="img/app-tableau.webp" alt="Tableau de bord : 1 328 étudiants, 427 abandons réels, risques estimés par le noyau et le Random Forest" width="2736" height="1200"></div>
+
+  <section class="block">
+    <span class="kicker">La démarche</span>
+    <h2 class="h2">Quatre étapes, un protocole commun.</h2>
+    <ol class="steps">
+      <li class="spot rv"><span class="corners"></span><b>01</b><h3>Préparation</h3><p>Nettoyage, encodage, partage 70/30 stratifié, rééquilibrage SMOTE sur l'apprentissage uniquement.</p></li>
+      <li class="spot rv"><span class="corners"></span><b>02</b><h3>Modèle à noyau</h3><p>Nadaraya-Watson à noyau gaussien, fenêtre optimisée par validation (k = 75).</p></li>
+      <li class="spot rv"><span class="corners"></span><b>03</b><h3>Machine Learning</h3><p>Régression logistique, Random Forest et XGBoost évalués sur le même protocole.</p></li>
+      <li class="spot rv"><span class="corners"></span><b>04</b><h3>Mise en service</h3><p>Application web d'alerte précoce, déployée en ligne.</p></li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <span class="kicker">L'application en images</span>
+    <h2 class="h2">Quarante secondes de démonstration.</h2>
+    <div class="demo rv">
+      <video controls playsinline preload="metadata" poster="img/demo-poster.webp" width="1920" height="1080">
+        <source src="img/demo.mp4" type="video/mp4">
+      </video>
+      <p class="cap">Connexion, tableau de bord, onglet Analyse, fiche d'un étudiant et saisie individuelle.</p>
+    </div>
+    <div class="gal">
+      <button type="button" class="shotbtn rv" data-full="img/app-analyse.webp" data-alt="Onglet Analyse : répartition par niveau de risque et performances des modèles"><img src="img/app-analyse.webp" alt="Onglet Analyse : répartition par niveau de risque et performances des modèles" width="2736" height="1020" loading="lazy"><span><b>Analyse</b>Risque par niveau, abandons constatés, AUC et F1 des modèles</span></button>
+      <button type="button" class="shotbtn rv" data-full="img/app-fiche.webp" data-alt="Fiche d'un étudiant : deux estimations, profils proches et facteurs du risque"><img src="img/app-fiche.webp" alt="Fiche d'un étudiant : deux estimations, profils proches et facteurs du risque" width="1398" height="1290" loading="lazy"><span><b>Fiche étudiant</b>Deux estimations, les 5 profils les plus proches, les facteurs qui pèsent</span></button>
+      <button type="button" class="shotbtn rv" data-full="img/app-saisie.webp" data-alt="Saisie individuelle d'un étudiant et résultat des deux modèles"><img src="img/app-saisie.webp" alt="Saisie individuelle d'un étudiant et résultat des deux modèles" width="1350" height="915" loading="lazy"><span><b>Saisie individuelle</b>13 champs, résultat immédiat des deux modèles</span></button>
+      <button type="button" class="shotbtn rv" data-full="img/app-connexion.webp" data-alt="Page de connexion de l'application"><img src="img/app-connexion.webp" alt="Page de connexion de l'application" width="2160" height="1280" loading="lazy"><span><b>Connexion</b>Accès réservé aux conseillers</span></button>
+    </div>
+    <dialog id="lb" aria-label="Capture agrandie"><button type="button" class="lb-close" aria-label="Fermer">×</button><img id="lb-img" src="" alt=""></dialog>
+  </section>
+
+  <section class="block">
+    <span class="kicker">Les résultats</span>
+    <h2 class="h2">Le Random Forest l'emporte.</h2>
+    <div class="res">
+      <div class="spot rv"><span class="corners"></span>
+        <h3 style="font-size:20px">AUC des quatre modèles</h3>
+        <p style="color:var(--muted);font-size:14px;margin-top:4px">Mesurée sur les 1 328 étudiants du jeu de test, jamais vus pendant l'entraînement.</p>
+        <div class="chart">
+          <svg viewBox="0 0 620 250" role="img" aria-label="AUC : Random Forest 0,934, régression logistique 0,931, XGBoost 0,930, Nadaraya-Watson 0,875, sur un axe de 0,85 à 0,95">
+            <g stroke="#E2E8F2"><line x1="190" y1="18" x2="190" y2="214"/><line x1="290" y1="18" x2="290" y2="214"/><line x1="390" y1="18" x2="390" y2="214"/><line x1="490" y1="18" x2="490" y2="214"/><line x1="590" y1="18" x2="590" y2="214"/></g>
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#66738F" text-anchor="middle"><text x="190" y="236">0,850</text><text x="290" y="236">0,875</text><text x="390" y="236">0,900</text><text x="490" y="236">0,925</text><text x="590" y="236">0,950</text></g>
+            <g font-family="Manrope, sans-serif" font-size="14" font-weight="600" fill="#0D1A33"><text x="0" y="45">Random Forest</text><text x="0" y="95">Régression log.</text><text x="0" y="145">XGBoost</text><text x="0" y="195">Nadaraya-Watson</text></g>
+            <g stroke-width="3" stroke-linecap="round" class="stems"><line x1="190" y1="40" x2="526" y2="40" stroke="#F2D27A"/><line x1="190" y1="90" x2="514" y2="90" stroke="#C9D7F6"/><line x1="190" y1="140" x2="510" y2="140" stroke="#C9D7F6"/><line x1="190" y1="190" x2="290" y2="190" stroke="#C9D7F6"/></g>
+            <g class="dots"><circle cx="526" cy="40" r="11" fill="#D4A73A"/><circle cx="514" cy="90" r="8" fill="#1F4FD1"/><circle cx="510" cy="140" r="8" fill="#1F4FD1"/><circle cx="290" cy="190" r="8" fill="#13357A"/></g>
+            <g font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#0A2350"><text x="546" y="44">0,934</text><text x="530" y="94">0,931</text><text x="526" y="144">0,930</text><text x="306" y="194">0,875</text></g>
+          </svg>
+        </div>
+        <div class="tbl"><table>
+          <thead><tr><th scope="col">MODÈLE</th><th scope="col">ACCURACY</th><th scope="col">F1</th><th scope="col">AUC</th></tr></thead>
+          <tbody class="tnum">
+            <tr class="win"><td>Random Forest</td><td>88,6 %</td><td>0,816</td><td>0,934</td></tr>
+            <tr><td>Régression logistique</td><td>87,4 %</td><td>0,813</td><td>0,931</td></tr>
+            <tr><td>XGBoost</td><td>88,3 %</td><td>0,811</td><td>0,930</td></tr>
+            <tr><td>Nadaraya-Watson</td><td>83,6 %</td><td>0,747</td><td>0,875</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="spot verdict rv">
+        <small>VERDICT</small>
+        <div class="big tnum">0,934</div>
+        <h3>Le Random Forest est retenu pour l'application.</h3>
+        <p>Les trois modèles de Machine Learning sont au coude à coude. L'approche à noyau reste solide mais significativement en dessous : un bootstrap de 1 000 ré-échantillonnages confirme l'écart.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <span class="kicker">L'outil livré</span>
+    <div class="tool">
+      <div class="rv">
+        <h2 class="h2">Alerte précoce, en ligne.</h2>
+        <p class="lead" style="margin-top:16px">L'application estime le risque d'abandon d'un étudiant ou de toute une cohorte importée en CSV, et explique chaque score par ses facteurs principaux avec SHAP.</p>
+        <div class="lv"><span><i style="background:#2FA65A"></i>Faible</span><span><i style="background:#E8A317"></i>Moyen · dès 0,30</span><span><i style="background:#D64545"></i>Élevé · dès 0,60</span></div>
+        <div class="row"><a class="btn btn-navy" href="https://alerte-abandon-universitaire.onrender.com" target="_blank" rel="noopener">Tester l'application ↗</a><a class="btn btn-line" href="https://github.com/onelngoma-source/alerte-abandon-universitaire" target="_blank" rel="noopener">Voir le code ↗</a></div>
+      </div>
+      <div class="spot appnums rv"><span class="corners"></span><span class="k2">DANS L'APPLICATION · JEU DE TEST</span><div class="g"><div><b>1 328</b><span>étudiants suivis</span></div><div><b>427</b><span>abandons réels</span></div><div><b>345</b><span>risques élevés · Random Forest</span></div><div><b>382</b><span>risques élevés · noyau</span></div></div></div>
+    </div>
+  </section>
+
+  <a class="next-page rv" href="contact.html"><div><small>PAGE SUIVANTE</small><strong>Travaillons ensemble</strong></div><span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+
+</main>
+<footer class="foot"><div class="wrap"><span>© 2026 Onel Ngoma · Libreville, Gabon</span><nav aria-label="Pied de page"><a href="index.html">Accueil</a><a href="competences.html">Compétences</a><a href="parcours.html">Parcours</a><a href="projets.html">Projets</a><a href="contact.html">Contact</a><a href="https://github.com/onelngoma-source" target="_blank" rel="noopener">GitHub ↗</a></nav></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+
+<script>
+(function(){
+  var lb = document.getElementById('lb'), li = document.getElementById('lb-img');
+  document.querySelectorAll('.shotbtn').forEach(function(b){ b.addEventListener('click', function(){ li.src = b.dataset.full; li.alt = b.dataset.alt; if (lb.showModal) lb.showModal(); }); });
+  lb.querySelector('.lb-close').addEventListener('click', function(){ lb.close(); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) lb.close(); });
+  if (!window.gsap || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var st = {trigger:'.chart', start:'top 85%'};
+  gsap.from('.dots circle', {attr:{cx:190}, duration:1.4, stagger:.12, ease:'power3.out', scrollTrigger:st});
+  gsap.from('.stems line', {attr:{x2:190}, duration:1.4, stagger:.12, ease:'power3.out', scrollTrigger:st});
+})();
+</script>
+
+</body>
+</html>
