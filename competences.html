@@ -57,7 +57,7 @@
 
   <div class="sk-hero">
     <div class="sphere-box rv">
-      <canvas id="sphere" role="img" aria-label="Sphère des technologies : Python, pandas, SQL, Apache NiFi, PostgreSQL, MySQL, Redis, scikit-learn, XGBoost, TensorFlow, SHAP, Flask, React, Node.js, Docker, Git, Chart.js, Linux et d'autres"></canvas>
+      <canvas id="sphere" role="img" aria-label="Sphère des technologies : Python, pandas, SQL, Apache NiFi, Airflow, dbt, PostgreSQL, MySQL, Redis, scikit-learn, XGBoost, TensorFlow, SHAP, Flask, React, Node.js, Docker, Git, Chart.js, Linux et d'autres"></canvas>
       <span class="sphere-hint">Faites tourner la sphère</span>
     </div>
     <div class="sk-intro rv">
@@ -70,7 +70,7 @@
   <div class="cats">
     <article class="spot cat rv"><span class="corners"></span>
       <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><div><h2>Data &amp; Big Data</h2><span class="sub">Collecter, transformer, stocker</span></div></div>
-      <ul><li><b>Python · pandas</b><span>préparation, nettoyage</span></li><li><b>SQL</b><span>requêtes, modélisation</span></li><li><b>Apache NiFi</b><span>pipelines ETL</span></li><li><b>PostgreSQL · MySQL</b><span>bases relationnelles</span></li><li><b>Redis</b><span>NoSQL clé-valeur</span></li></ul>
+      <ul><li><b>Python · pandas</b><span>préparation, nettoyage</span></li><li><b>SQL</b><span>requêtes, modélisation</span></li><li><b>Airflow · dbt</b><span>orchestration, transformations testées</span></li><li><b>Apache NiFi</b><span>pipelines ETL</span></li><li><b>PostgreSQL · MySQL</b><span>bases relationnelles</span></li><li><b>Redis</b><span>NoSQL clé-valeur</span></li></ul>
     </article>
     <article class="spot cat g rv"><span class="corners"></span>
       <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><path d="M7 6l3 5M7 18l3-5M14 12h3"/></svg></span><div><h2>Machine Learning</h2><span class="sub">Modéliser, évaluer, expliquer</span></div></div>
@@ -78,7 +78,7 @@
     </article>
     <article class="spot cat rv"><span class="corners"></span>
       <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></span><div><h2>Décisionnel</h2><span class="sub">Restituer pour décider</span></div></div>
-      <ul><li><b>Schéma en étoile</b><span>entrepôts de données</span></li><li><b>KPI</b><span>conception d'indicateurs</span></li><li><b>Tableaux de bord</b><span>suivi et filtres</span></li><li><b>Chart.js</b><span>visualisation web</span></li></ul>
+      <ul><li><b>Schéma en étoile</b><span>entrepôts de données</span></li><li><b>KPI</b><span>conception d'indicateurs</span></li><li><b>Tableaux de bord</b><span>suivi et filtres</span></li><li><b>Streamlit · Plotly</b><span>tableaux de bord en ligne</span></li><li><b>Chart.js</b><span>visualisation web</span></li></ul>
     </article>
     <article class="spot cat g rv"><span class="corners"></span>
       <div class="top"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><div><h2>Dev &amp; DevOps</h2><span class="sub">Livrer et déployer</span></div></div>
@@ -110,9 +110,9 @@
 (function(){
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var C = {d:'#1F4FD1', m:'#D4A73A', v:'#0A2350'};
-  var tags = [['Python','d'],['pandas','d'],['SQL','d'],['Apache NiFi','d'],['PostgreSQL','d'],['MySQL','d'],['Redis','d'],['ETL','d'],['NumPy','d'],
+  var tags = [['Python','d'],['pandas','d'],['SQL','d'],['Apache NiFi','d'],['Airflow','d'],['dbt','d'],['PostgreSQL','d'],['MySQL','d'],['Redis','d'],['ETL','d'],['NumPy','d'],
               ['scikit-learn','m'],['XGBoost','m'],['SHAP','m'],['TensorFlow','m'],['Keras','m'],['Random Forest','m'],['SMOTE','m'],['Noyau','m'],
-              ['Flask','v'],['React','v'],['Node.js','v'],['Docker','v'],['Git','v'],['Chart.js','v'],['Linux','v'],['PHP','v'],['CI/CD','v']];
+              ['Flask','v'],['React','v'],['Node.js','v'],['Docker','v'],['Git','v'],['Chart.js','v'],['Streamlit','v'],['Linux','v'],['PHP','v'],['CI/CD','v']];
   var cv = document.getElementById('sphere'), ctx = cv.getContext('2d'), pts = [], R = 0, W = 0;
   var n = tags.length;
   for (var i = 0; i < n; i++){

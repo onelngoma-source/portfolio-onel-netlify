@@ -61,7 +61,7 @@
   <header class="page-head">
     <span class="kicker">Projets</span>
     <h1 class="kinetic">Ce que j'ai <span class="ink">construit.</span></h1>
-    <p>Quatre projets, quatre étapes de la chaîne de la donnée. Faites défiler : les projets s'empilent.</p>
+    <p>Cinq projets qui couvrent toute la chaîne de la donnée. Faites défiler : les projets s'empilent.</p>
   </header>
 
   <div class="stackwrap">
@@ -78,6 +78,18 @@
     </article>
 
     <article class="pcard" style="--i:1">
+      <div class="vis"><div class="browser"><div class="bar"><i></i><i></i><i></i><span>climat-gabon.streamlit.app</span></div><img src="img/meteo-tableau-de-bord.webp" alt="Tableau de bord du climat des 9 provinces du Gabon : indicateurs, climatogramme et évolution de la température à Libreville" width="1600" height="821" loading="lazy"></div></div>
+      <div class="txt">
+        <span class="num">02 · DATA ENGINEERING · PROJET PERSONNEL · 2026</span>
+        <h2>Pipeline météo des 9 provinces du Gabon</h2>
+        <p>Un pipeline automatisé qui collecte chaque matin la météo des 9 chefs-lieux de province, la charge sans doublons dans PostgreSQL, la transforme avec dbt en normales 1991-2020 et en anomalies, puis l'affiche dans un tableau de bord public. Le tout orchestré par Airflow dans Docker.</p>
+        <div class="facts"><div><b>121&nbsp;000+</b><span>relevés depuis 1990</span></div><div><b>+0,15&nbsp;°C</b><span>par décennie à Libreville</span></div><div><b>12</b><span>tests de données dbt</span></div></div>
+        <div class="chips"><span>Airflow</span><span>dbt</span><span>PostgreSQL</span><span>Docker</span><span>Python</span><span>Streamlit</span></div>
+        <div class="row"><a class="btn btn-navy" href="https://climat-gabon.streamlit.app" target="_blank" rel="noopener">Tableau de bord ↗</a><a class="btn btn-line" href="https://github.com/onelngoma-source/pipeline-meteo-gabon" target="_blank" rel="noopener">Code ↗</a></div>
+      </div>
+    </article>
+
+    <article class="pcard" style="--i:2">
       <div class="vis">
         <div class="star" role="img" aria-label="Schéma en étoile : la table de faits faits_ventes reliée aux dimensions magasin, produits et temps">
           <svg viewBox="0 0 110 100" preserveAspectRatio="none" aria-hidden="true"><g stroke="#F2D27A" stroke-width=".5" stroke-dasharray="1.5 1.2" fill="none"><line x1="55" y1="55" x2="22" y2="18"/><line x1="55" y1="55" x2="88" y2="18"/><line x1="55" y1="55" x2="55" y2="90"/></g></svg>
@@ -88,7 +100,7 @@
         </div>
       </div>
       <div class="txt">
-        <span class="num">02 · DATA ENGINEERING · PROJET ACADÉMIQUE</span>
+        <span class="num">03 · DATA ENGINEERING · PROJET ACADÉMIQUE</span>
         <h2>MarketPro BI : entrepôt de données</h2>
         <p>Un entrepôt en schéma en étoile pour une enseigne de distribution, alimenté par un pipeline ETL Apache NiFi vers MySQL, et un tableau de bord commercial avec KPI, filtres, comparaison de périodes et exports.</p>
         <div class="facts"><div><b>2 000</b><span>ventes</span></div><div><b>3</b><span>dimensions</span></div><div><b>FCFA</b><span>devise</span></div></div>
@@ -96,7 +108,7 @@
       </div>
     </article>
 
-    <article class="pcard" style="--i:2">
+    <article class="pcard" style="--i:3">
       <div class="vis">
         <div class="snip"><div class="hd">scoring_credit.py</div>
 <pre><span class="c"># Risque de défaut de paiement</span>
@@ -110,14 +122,14 @@ modeles <span class="k">=</span> {
     print(nom, roc_auc_score(y_test, p))</pre></div>
       </div>
       <div class="txt">
-        <span class="num">03 · MACHINE LEARNING · 2026</span>
+        <span class="num">04 · MACHINE LEARNING · 2026</span>
         <h2>Scoring crédit</h2>
         <p>Prédiction du risque de défaut de paiement des clients. Les données de plusieurs sources (historique de crédit, données bancaires et comportementales) sont collectées, nettoyées et enrichies avant la comparaison des modèles.</p>
         <div class="chips"><span>Python</span><span>pandas</span><span>Régression logistique</span><span>Random Forest</span></div>
       </div>
     </article>
 
-    <article class="pcard" style="--i:3">
+    <article class="pcard" style="--i:4">
       <div class="vis">
         <div class="consoles" aria-label="Les six espaces du SIGRH">
           <span class="lock"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>PROJET CONFIDENTIEL</span>
@@ -125,7 +137,7 @@ modeles <span class="k">=</span> {
         </div>
       </div>
       <div class="txt">
-        <span class="num">04 · DÉVELOPPEMENT · STAGE CHEZ TMP</span>
+        <span class="num">05 · DÉVELOPPEMENT · STAGE CHEZ TMP</span>
         <h2>SIGRH pour une administration publique</h2>
         <p>Un système de gestion des ressources humaines conçu de zéro : modélisation MCD/MLD, base PostgreSQL, consoles d'administration par profil et volet décisionnel. Le client et les données restent confidentiels.</p>
         <div class="chips"><span>PostgreSQL</span><span>React</span><span>Node.js</span><span>UML</span><span>MCD / MLD</span></div>

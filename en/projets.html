@@ -61,7 +61,7 @@
   <header class="page-head">
     <span class="kicker">Projects</span>
     <h1 class="kinetic">What I <span class="ink">built.</span></h1>
-    <p>Four projects, four steps of the data chain. Scroll: the projects stack up.</p>
+    <p>Five projects covering the whole data chain. Scroll: the projects stack up.</p>
   </header>
 
   <div class="stackwrap">
@@ -78,6 +78,18 @@
     </article>
 
     <article class="pcard" style="--i:1">
+      <div class="vis"><div class="browser"><div class="bar"><i></i><i></i><i></i><span>climat-gabon.streamlit.app</span></div><img src="../img/meteo-tableau-de-bord.webp" alt="Climate dashboard for Gabon's 9 provinces: key figures, climate chart and temperature trend in Libreville" width="1600" height="821" loading="lazy"></div></div>
+      <div class="txt">
+        <span class="num">02 · DATA ENGINEERING · PERSONAL PROJECT · 2026</span>
+        <h2>Weather pipeline for Gabon's 9 provinces</h2>
+        <p>An automated pipeline that collects the weather of Gabon's 9 provincial capitals every morning, loads it into PostgreSQL without duplicates, turns it into 1991-2020 climate normals and anomalies with dbt, and publishes it in a public dashboard. Orchestrated by Airflow in Docker.</p>
+        <div class="facts"><div><b>121,000+</b><span>daily records since 1990</span></div><div><b>+0.15&nbsp;°C</b><span>per decade in Libreville</span></div><div><b>12</b><span>dbt data tests</span></div></div>
+        <div class="chips"><span>Airflow</span><span>dbt</span><span>PostgreSQL</span><span>Docker</span><span>Python</span><span>Streamlit</span></div>
+        <div class="row"><a class="btn btn-navy" href="https://climat-gabon.streamlit.app" target="_blank" rel="noopener">Dashboard ↗</a><a class="btn btn-line" href="https://github.com/onelngoma-source/pipeline-meteo-gabon" target="_blank" rel="noopener">Code ↗</a></div>
+      </div>
+    </article>
+
+    <article class="pcard" style="--i:2">
       <div class="vis">
         <div class="star" role="img" aria-label="Star schema: the faits_ventes fact table linked to the store, product and time dimensions">
           <svg viewBox="0 0 110 100" preserveAspectRatio="none" aria-hidden="true"><g stroke="#F2D27A" stroke-width=".5" stroke-dasharray="1.5 1.2" fill="none"><line x1="55" y1="55" x2="22" y2="18"/><line x1="55" y1="55" x2="88" y2="18"/><line x1="55" y1="55" x2="55" y2="90"/></g></svg>
@@ -88,7 +100,7 @@
         </div>
       </div>
       <div class="txt">
-        <span class="num">02 · DATA ENGINEERING · ACADEMIC PROJECT</span>
+        <span class="num">03 · DATA ENGINEERING · ACADEMIC PROJECT</span>
         <h2>MarketPro BI: data warehouse</h2>
         <p>A star-schema warehouse for a retail chain, fed by an Apache NiFi to MySQL ETL pipeline, and a sales dashboard with KPIs, filters, period comparison and exports.</p>
         <div class="facts"><div><b>2,000</b><span>sales</span></div><div><b>3</b><span>dimensions</span></div><div><b>FCFA</b><span>currency</span></div></div>
@@ -96,7 +108,7 @@
       </div>
     </article>
 
-    <article class="pcard" style="--i:2">
+    <article class="pcard" style="--i:3">
       <div class="vis">
         <div class="snip"><div class="hd">scoring_credit.py</div>
 <pre><span class="c"># Payment default risk</span>
@@ -110,14 +122,14 @@ modeles <span class="k">=</span> {
     print(nom, roc_auc_score(y_test, p))</pre></div>
       </div>
       <div class="txt">
-        <span class="num">03 · MACHINE LEARNING · 2026</span>
+        <span class="num">04 · MACHINE LEARNING · 2026</span>
         <h2>Credit scoring</h2>
         <p>Predicting customers' payment default risk. Data from several sources (credit history, banking and behavioural data) is collected, cleaned and enriched before models are compared.</p>
         <div class="chips"><span>Python</span><span>pandas</span><span>Logistic regression</span><span>Random Forest</span></div>
       </div>
     </article>
 
-    <article class="pcard" style="--i:3">
+    <article class="pcard" style="--i:4">
       <div class="vis">
         <div class="consoles" aria-label="The six areas of the HR system">
           <span class="lock"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>CONFIDENTIAL PROJECT</span>
@@ -125,7 +137,7 @@ modeles <span class="k">=</span> {
         </div>
       </div>
       <div class="txt">
-        <span class="num">04 · DEVELOPMENT · INTERNSHIP AT TMP</span>
+        <span class="num">05 · DEVELOPMENT · INTERNSHIP AT TMP</span>
         <h2>HR information system for a public administration</h2>
         <p>A human resources management system designed from scratch: data modelling, PostgreSQL database, role-based admin consoles and a BI layer. The client and data remain confidential.</p>
         <div class="chips"><span>PostgreSQL</span><span>React</span><span>Node.js</span><span>UML</span><span>Data modelling</span></div>
