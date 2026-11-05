@@ -158,3 +158,84 @@ body.menu-open .logo,body.menu-open .lang-switch{opacity:0;visibility:hidden;tra
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* ==========================================================================
+   Ajustements responsive (mobile et tablette)
+   Le préfixe « body » donne la priorité sur les styles propres à chaque page.
+   ========================================================================== */
+
+/* Cibles tactiles et contrastes communs à toutes les tailles */
+.logo{display:inline-flex;align-items:center;min-height:44px}
+body .feat-full .cap .btn-line{background:transparent}
+body .feat-full .cap .btn-line:hover{background:rgba(255,255,255,.12)}
+body .feat-full .cap{padding-top:110px;background:linear-gradient(0deg,rgba(10,35,80,.96) 0%,rgba(10,35,80,.86) 62%,rgba(10,35,80,0) 100%)}
+
+/* Tablette : photos portrait moins hautes, grilles qui ne débordent pas */
+@media (max-width:980px){
+  body .ed-photo,body .photo{max-width:420px;width:100%;margin-inline:auto;justify-self:center}
+  body .ed-photo .frame,body .photo .frame{aspect-ratio:4/5}
+  body .ed-photo img,body .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+  body .editorial{gap:44px;padding-block:60px}
+  body .ct>*,body .about>*,body .res>*,body .tool>*{min-width:0}
+}
+
+/* Petites tablettes et grands téléphones */
+@media (max-width:720px){
+  body .feat-full{background:var(--navy);margin-inline:0}
+  body .feat-full .cap{position:static;background:var(--navy);padding:22px 22px 26px}
+  body .erow{grid-template-columns:44px minmax(0,1fr);gap:10px 16px;padding:26px 0}
+  body .erow>div{grid-column:1 / -1}
+  body .erow .n{font-size:26px}
+  body .erow h3{font-size:21px}
+}
+
+/* Téléphones */
+@media (max-width:600px){
+  body{font-size:16px}
+  body .lead,body .page-head p,body .hero .lead{font-size:17px}
+  body .spot{padding:22px}
+  body .btn{min-height:48px;padding:0 22px;font-size:15px}
+  body .next-page,body .goal{padding:26px 24px}
+  body .next-page .arrow{width:50px;height:50px}
+
+  /* Cartes projets */
+  body .pcard .facts{gap:8px}
+  body .pcard .facts div{padding:10px 10px 12px}
+  body .pcard .facts b{font-size:clamp(15px,4.6vw,19px);white-space:nowrap}
+  body .pcard .facts span{display:block;font-size:12px;line-height:1.35;margin-top:2px}
+  body .pcard .row .btn{flex:1 1 auto}
+  body .snip pre{font-size:11.5px;padding:14px}
+
+  /* Chiffres clés de l'accueil */
+  body .ed-stats{gap:18px 28px}
+  body .ed-stats div b{font-size:26px}
+  body .nums div{padding:14px 12px}
+  body .nums b{font-size:clamp(20px,6.2vw,30px)}
+  body .nums span{font-size:12.5px;line-height:1.35;display:block}
+
+  /* Compétences : nom au-dessus de sa description */
+  body .cat li{flex-direction:column;gap:2px;align-items:flex-start}
+  body .cat li span{text-align:left}
+
+  /* Étude de cas : le tableau remplace le graphique, sans défilement horizontal */
+  body .chart{display:none}
+  body table{min-width:0;font-size:14px}
+  body th{letter-spacing:.04em;padding:8px 6px}
+  body td{padding:10px 6px}
+  body .appnums b{font-size:28px}
+  body .appnums .g div{padding:14px}
+
+  /* Contact : bouton sous la valeur, photo recadrée */
+  body .cc{flex-wrap:wrap;padding:16px}
+  body .cc .grow{flex:1 1 calc(100% - 66px)}
+  body .cc .act{margin-left:66px}
+  body .cc .val{font-size:16px}
+  body .ph img{aspect-ratio:4/5;object-fit:cover;object-position:50% 15%}
+}
+
+/* Très petits écrans (320 px) */
+@media (max-width:360px){
+  .wrap{padding-left:16px;padding-right:16px}
+  body .spot{padding:18px}
+  body .cc .act{margin-left:0}
+}
